@@ -13,3 +13,26 @@ public class CabInvoiceGenerator {
 
 }
 
+
+
+package com.tdddemo;
+
+import com.tdddemo.CabInvoiceGenerator;
+import org.junit.Assert;
+import org.junit.Test;
+public class CabInvoiceGeneratorText {
+    public void distanceandtime() {
+        CabInvoiceGenerator cabInvoiceGenerator = new CabInvoiceGenerator();
+        double distance = 2.0;
+        int time = 5;
+        double result = cabInvoiceGenerator.calculatefare(distance, time);
+        Assert.assertEquals(25,result,0);
+
+    }
+}
+    <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.1</version>
+    <scope>test</scope>
+</dependency>
